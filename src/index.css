@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", "sans-serif";
+}
+
+.hero {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+}
+
+.brand-banner {
+  background-image: url(./assets/brand_banner/banner_img.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.newsletter {
+  background-color: #f1f1f1;
+}
+
+/* Swiper js custom css start*/
+.swiper-button-prev {
+  top: 40%;
+}
+.swiper-button-prev::after {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.swiper-button-next {
+  top: 40%;
+}
+.swiper-button-next::after {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+/* Swiper js custom css end*/
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1320px] mx-auto px-2;
+  }
+}
